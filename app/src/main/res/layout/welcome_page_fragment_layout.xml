@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_l">
+
+        <ImageView
+            android:layout_width="@dimen/size_200"
+            android:layout_height="@dimen/size_200"
+            android:layout_margin="@dimen/padding_m"
+            android:contentDescription="@string/image_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_logo_white" />
+
+        <TextView
+            android:id="@+id/welcome_page_title"
+            style="@style/text_large_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_m"
+            android:gravity="center"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/welcome_page_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_m"
+            android:layout_marginStart="@dimen/padding_m"
+            android:layout_marginEnd="@dimen/padding_m"
+            android:gravity="center"
+            android:textColor="@color/color_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_m"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <include
+                android:id="@+id/welcome_page_register"
+                layout="@layout/button_view_white_raised"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_40"
+                android:layout_margin="@dimen/padding_m"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/welcome_page_login"
+                layout="@layout/button_view_white_raised"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_40"
+                android:layout_margin="@dimen/padding_m"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_m"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <include
+            android:id="@+id/welcome_page_change_language"
+            layout="@layout/button_view_primary_light_flat"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_40"
+            android:layout_margin="@dimen/padding_m" />
+        <TextView
+            style="@style/text_small_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/all_rights_reserved"
+            android:textAlignment="center"
+            android:id="@+id/welcome_all_rights"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

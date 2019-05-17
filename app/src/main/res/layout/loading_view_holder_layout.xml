@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/loading_view_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_m"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_m" />
+
+        <TextView
+            android:id="@+id/loading_view_loading_title"
+            style="@style/text_small_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_view_failed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_m"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/loading_view_failed_title"
+            style="@style/text_small_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_m" />
+
+        <TextView
+            android:id="@+id/loading_view_failed_sub_title"
+            style="@style/text_secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_m"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <include
+            android:id="@+id/loading_view_failed_button"
+            layout="@layout/button_view_accent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40"
+            android:layout_marginStart="@dimen/size_24"
+            android:layout_marginTop="@dimen/padding_m"
+            android:layout_marginEnd="@dimen/size_24"
+            android:layout_marginBottom="@dimen/padding_m"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

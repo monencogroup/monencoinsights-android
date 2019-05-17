@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/article_view_image"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerCrop"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="100%" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_l"
+            android:paddingEnd="@dimen/padding_l"
+            android:background="@drawable/banner_background"
+            android:paddingBottom="@dimen/size_48"
+            app:layout_aspectRatio="100%"
+            android:gravity="bottom"
+            app:layout_widthPercent="100%">
+            <TextView
+                android:id="@+id/article_view_title"
+                style="@style/text_large_bold"
+                android:textSize="@dimen/text_size_xl"
+                android:textColor="@color/color_white"
+                android:layout_width="match_parent"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/article_view_lead"
+                android:layout_width="match_parent"
+                style="@style/text_large_bold"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/color_white"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:background="@color/color_primary_dark"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/setting_fragment_back"
+            android:layout_width="@dimen/size_48"
+            android:layout_height="@dimen/size_48"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/image_description"
+            android:focusable="true"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/setting_fragment_title"
+            style="@style/text_large_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/setting_fragment_categories"
+                layout="@layout/setting_view_layout" />
+
+            <include
+                android:id="@+id/setting_fragment_bookmarks"
+                layout="@layout/setting_view_layout" />
+
+            <include
+                android:id="@+id/setting_fragment_purchases"
+                layout="@layout/setting_view_layout" />
+
+            <include
+                android:id="@+id/setting_fragment_monenco_website"
+                layout="@layout/setting_view_layout" />
+            <include
+                android:id="@+id/setting_fragment_about_us"
+                layout="@layout/setting_view_layout" />
+
+            <include
+                android:id="@+id/setting_fragment_language"
+                layout="@layout/setting_view_layout" />
+
+            <include
+                android:id="@+id/setting_fragment_logout"
+                layout="@layout/setting_view_layout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

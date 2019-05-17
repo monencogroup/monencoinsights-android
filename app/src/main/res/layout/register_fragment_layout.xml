@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:background="@color/color_primary_dark"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/register_back"
+            android:layout_width="@dimen/size_48"
+            android:layout_height="@dimen/size_48"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/image_description"
+            android:focusable="true"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/register_title"
+            style="@style/text_large_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/register_message"
+                style="@style/text_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_40"
+                android:layout_marginTop="@dimen/padding_l"
+                android:layout_marginEnd="@dimen/size_40"
+                android:gravity="center"
+                android:textColor="@color/color_white" />
+
+            <include
+                android:id="@+id/register_form"
+                layout="@layout/form_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_40"
+                android:layout_marginTop="@dimen/padding_m"
+                android:layout_marginEnd="@dimen/size_40"
+                android:layout_marginBottom="@dimen/padding_m"
+                android:elevation="4dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        style="@style/text_small_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_m"
+        android:text="@string/all_rights_reserved"
+        android:textAlignment="center"
+        android:textColor="@color/color_white" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_ripple"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_m">
+
+        <ImageView
+            android:id="@+id/category_view_icon"
+            android:layout_width="@dimen/size_36"
+            android:layout_height="@dimen/size_36"
+            android:layout_margin="@dimen/padding_m"
+            android:contentDescription="@string/image_description" />
+
+        <TextView
+            android:id="@+id/category_view_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_m"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/category_view_checked"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:layout_margin="@dimen/padding_m"
+            android:contentDescription="@string/image_description"
+            android:src="@drawable/ic_checked" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_line" />
+</LinearLayout>

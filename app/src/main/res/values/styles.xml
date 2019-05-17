@@ -1,0 +1,103 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:colorBackground">@color/color_primary_dark</item>
+        <item name="android:textViewStyle">@style/text</item>
+    </style>
+    <style name="AppTheme.Toolbar" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:textViewStyle">@style/text_white</item>
+
+    </style>
+    <style name="text_white" parent="text_large_bold">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="text" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/iran_sans</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">@dimen/text_size_m</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="text_bold_secondary" parent="text_bold">
+        <item name="android:textColor">@color/color_placeholder</item>
+    </style>
+
+    <style name="text_small" parent="text">
+        <item name="android:textSize">@dimen/text_size_s</item>
+    </style>
+
+    <style name="text_small_bold" parent="text_small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_small_secondary" parent="text_small">
+        <item name="android:textColor">@color/color_placeholder</item>
+    </style>
+
+    <style name="text_secondary" parent="text">
+        <item name="android:textColor">@color/color_placeholder</item>
+    </style>
+
+    <style name="text_bold" parent="text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_large" parent="text">
+        <item name="android:textSize">@dimen/text_size_l</item>
+    </style>
+
+    <style name="text_large_bold" parent="text_large">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="button_raised" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:fontFamily">@font/iran_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_m</item>
+    </style>
+
+    <style name="button_flat" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:fontFamily">@font/iran_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">@dimen/text_size_m</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/color_icon</item>
+    </style>
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <!--<style name="button_primary_border_raised" parent="button_raised">-->
+    <!--<item name="android:background">@drawable/primary_border_ripple_box</item>-->
+    <!--<item name="android:textColor">@color/color_primary</item>-->
+    <!--</style>-->
+    <!--<style name="button_primary_raised" parent="button_raised">-->
+    <!--<item name="android:background">@drawable/primary_ripple_box</item>-->
+    <!--<item name="android:textColor">@color/color_white</item>-->
+    <!--</style>-->
+
+    <!--<style name="button_white_border_raised" parent="button_raised">-->
+    <!--<item name="android:background">@drawable/white_border_ripple_box</item>-->
+    <!--<item name="android:textColor">@color/color_white</item>-->
+    <!--</style>-->
+
+    <!--<style name="button_secondary_border_small_flat" parent="button_flat">-->
+    <!--<item name="android:background">@drawable/secondary_border_ripple_box</item>-->
+    <!--<item name="android:textColor">@color/color_primary</item>-->
+    <!--<item name="android:textSize">@dimen/text_size_s</item>-->
+    <!--</style>-->
+
+
+</resources>

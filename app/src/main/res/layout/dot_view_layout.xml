@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/padding_m"
+    android:layout_height="@dimen/padding_m"
+    android:background="@drawable/dot_view_background"
+    android:layout_margin="@dimen/padding_s" />

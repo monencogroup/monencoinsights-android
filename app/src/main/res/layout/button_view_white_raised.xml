@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/text_bold"
+    android:elevation="@dimen/button_elevation"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/size_40"
+    android:background="@drawable/button_view_white_background"
+    android:gravity="center"
+    android:paddingStart="@dimen/button_corner"
+    android:paddingEnd="@dimen/button_corner"
+    android:textAlignment="center"
+    android:textColor="@color/color_primary" />

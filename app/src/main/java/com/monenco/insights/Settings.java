@@ -21,9 +21,9 @@ public class Settings {
     private static final int PRODUCT = 2;
 
     public static void initialize() {
-        int type = LOCAL;
+        int type = PRODUCT;
         PLATFORM = "Android";
-        VERSION = "1";
+        VERSION = "2";
         API_URL = "api/v1/";
         DEFAULT_ZOOM = 15;
         switch (type) {

@@ -1,5 +1,6 @@
 package com.monenco.insights.views;
 
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -60,6 +61,7 @@ public class ArticleViewHolder extends AbstractModelViewHolder<Article> implemen
     public void onModelChange() {
         ImageLoader.loadImage(image, getModel().image);
         title.setText(getModel().title);
+        Log.e("DATE IS ",getModel().creationDate);
         date.setText(Calander.getDate(getModel().creationDate, true));
         lead.setText(getModel().leadText);
         if (getModel().isBookmarked) {

@@ -1,5 +1,7 @@
 package com.monenco.insights;
 
+import android.util.Log;
+
 import com.monenco.insights.models.Translator;
 
 public class Calander {
@@ -8,9 +10,10 @@ public class Calander {
         if (Translator.isPersian()) {
             gregorianDate = gregorian_to_jalali_int(gregorianDate);
         }
-        int year = Integer.parseInt(gregorianDate.substring(0,4));
+        Log.e("greg date", gregorianDate);
+        int year = Integer.parseInt(gregorianDate.substring(0, 4));
         int month = Integer.parseInt(gregorianDate.substring(5, 7));
-        int date = Integer.parseInt(gregorianDate.substring(8,10));
+        int date = Integer.parseInt(gregorianDate.substring(8, 10));
         String monthStr;
         switch (month) {
             case 1:
@@ -151,11 +154,11 @@ public class Calander {
         }
         if (isShort) {
             return date + " " + monthStr;
-        }else {
-            if(Translator.isPersian()){
-                return date+" "+monthStr+" "+year;
-            }else {
-                return monthStr+" "+date+"th, "+year;
+        } else {
+            if (Translator.isPersian()) {
+                return date + " " + monthStr + " " + year;
+            } else {
+                return monthStr + " " + date + "th, " + year;
             }
         }
     }
@@ -197,7 +200,13 @@ public class Calander {
 
         String d = "";
         d += Integer.toString(jy) + "-";
+        if (jm < 10) {
+            d += "0";
+        }
         d += jm + "-";
+        if (j_day_no + 1 < 10) {
+            d += "0";
+        }
         d += Integer.toString(j_day_no + 1);
         return d;
     }

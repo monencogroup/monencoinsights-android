@@ -35,7 +35,7 @@ public class Settings {
             case PRODUCT:
                 CLIENT_ID = "aVL0WN8hPkgHPXef1MCnKwzzz5IJpqWYsBAKvFYC";
                 CLIENT_SECRET = "PidFXzCLy4fiULNlhAjZerwBZU2l4iApyYF4NFjMmCbdXaqdBtm6qILNLxSOm5rwROEnajtVe69IUEOLofoxchL6FHheFVa3dPyWGEGnJd1bIFYPfDiSFTVqsqQqDGfJ";
-                DOMAIN = "http://5.253.26.156/";
+                DOMAIN = "http://insightapp.monencogroup.com/";
                 break;
         }
     }
